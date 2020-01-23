@@ -1,0 +1,1 @@
+For construction different complexity objects from the same set 
