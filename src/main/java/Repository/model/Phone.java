@@ -6,9 +6,7 @@ import java.math.BigDecimal;
 import java.sql.Timestamp;
 
 /**
- * Анотация @Data из библиотеки lombok добавляет геттеры и сеттеры ко всем полям класса.
- * Не забудте устоновить плагин lombok для IDE.
- * IntelliJ IDEA -> Preferences -> Plugins ->  в поиске : lombok -> Install.
+ * Annotation @Data from library lombok add getter and setter adds to all fields of class
  */
 @Data
 public class Phone {

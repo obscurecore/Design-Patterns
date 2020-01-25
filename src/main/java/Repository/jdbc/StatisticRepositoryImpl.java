@@ -34,8 +34,7 @@ public class StatisticRepositoryImpl implements StatisticRepository<Statistic, S
      * @param comp   for result sorting
      * @return statistic for decremented models.
      */
-    @Override
-    public List<Statistic> getStat(@NotNull final List<PhoneModel> models,
+  /*  public List<Statistic> getStat(@NotNull final List<PhoneModel> models,
                                    @NotNull final Statistic.TimeRange range,
                                    @NotNull final Comparator<Statistic> comp) {
 
@@ -64,6 +63,8 @@ public class StatisticRepositoryImpl implements StatisticRepository<Statistic, S
         }
         return new ArrayList<>(result);
     }
+
+   */
 
     @Override
     public List<Statistic> getStat(List<DAO.model.PhoneModel> models, Statistic.TimeRange range, Comparator<Statistic> comp) {
@@ -119,11 +120,11 @@ public class StatisticRepositoryImpl implements StatisticRepository<Statistic, S
         }
         return new ArrayList<>(statistics);
     }
-
+/*
     @Override
     public String modelWildcards(int models) {
         return null;
-    }
+    }*/
 
     /**
      * Set wildcards and fill result obj.
@@ -158,8 +159,6 @@ public class StatisticRepositoryImpl implements StatisticRepository<Statistic, S
         /**
          * Get statistic by sales with var args of models.
          * For fill %models%:
-         *
-         * @see ru.javavision.jdbc.StatisticRepository#modelWildcards(int).
          */
         GET_STAT("SELECT " +
                 "  m.name, " +

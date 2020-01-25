@@ -17,7 +17,7 @@ public interface StatisticRepository<Entity extends Statistic, Range extends Sta
 
     List<Entity> getStatRevenueMore(BigDecimal threshold, Range range, Comparator<Entity> comp);
 
-    default String modelWildcards(final @NotNull int models) {
+    /*default String modelWildcards(final @NotNull int models) {
         if (models == 0) {
             return "";
         } else if (models == 1) {
@@ -31,5 +31,5 @@ public interface StatisticRepository<Entity extends Statistic, Range extends Sta
             sb.append(") ");
             return sb.toString();
         }
-    }
+    }*/
 }
