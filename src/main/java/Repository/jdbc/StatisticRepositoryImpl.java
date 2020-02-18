@@ -10,10 +10,7 @@ import java.math.BigDecimal;
 import java.sql.*;
 import java.util.*;
 
-/**
- * Author : Pavel Ravvich.
- * Created : 05/11/2017.
- */
+
 public class StatisticRepositoryImpl implements StatisticRepository<Statistic, Statistic.TimeRange> {
 
     /**
